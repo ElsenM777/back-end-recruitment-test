@@ -1,0 +1,30 @@
+body{
+    background: whitesmoke;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.answers li{
+    position: relative;
+}
+
+.answers li input[type=radio]{
+    position: fixed;
+    left: 99999px;
+}
+
+.answers .dot{
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.answers li input[type=radio]:checked ~ .dot {
+    background-color:#ffc107;
+}
